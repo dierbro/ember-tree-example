@@ -1,0 +1,12 @@
+<a class="pull-left" href="#">
+    <img class="media-object" src="http://www.gravatar.com/avatar">
+</a>
+<div class="media-body">
+    <strong class="media-heading"> {{ root.username }}</strong>
+    <div class="panel comment-content">{{ root.content }}</div>
+    <br />
+    {{#each comment in root.children}}
+        {{comment-tree root=comment}}
+    {{/each }}
+</div>
+

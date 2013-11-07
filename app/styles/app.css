@@ -1,0 +1,19 @@
+/* Put your CSS here */
+html, body {
+    margin: 20px;
+    background-color: #eee;
+}
+
+.comment{
+  margin-top: 0px;
+}
+
+.comment-content{
+  padding: 5px;
+  min-height: 60px;
+  margin-bottom: 0px;
+};
+
+@keyframes domChanged { from { background: yellow; } }
+@-webkit-keyframes domChanged { from { background: yellow; } }
+.ember-view { animation: domChanged 1s; -webkit-animation: domChanged 1s; }
